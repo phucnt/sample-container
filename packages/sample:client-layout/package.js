@@ -8,7 +8,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@1.4.1'),
+  api.versionsFrom('METEOR@1.4.1.2');
   api.use([
     'sample:core',
   ], both);

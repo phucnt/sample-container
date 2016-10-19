@@ -3,18 +3,20 @@ const client = 'client';
 const server = 'server';
 
 Package.describe({
-  name: 'sample:app',
+  name: 'sample:server',
   version: '0.0.1',
-  summary: 'sample package',
+  summary: 'main server package',
 });
+
 
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@1.4.1.2');
 
-  api.imply([
+  api.use([
     'sample:core',
-    'sample:client-routes',
-    'sample:server',
-    'sample:client-core',
+    'sample:server-core',
+  ]);
+  api.addFiles([
+    'server/methods/test.js'
   ]);
 });

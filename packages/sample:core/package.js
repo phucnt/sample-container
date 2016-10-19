@@ -9,9 +9,9 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@1.4.1'),
+  api.versionsFrom('METEOR@1.4.1.2');
   api.imply([
-    'meteor-base',
+    'meteor-base@1.0.4',
     'mobile-experience@1.0.4',
     'mongo',
     'standard-minifier-css@1.2.0',
